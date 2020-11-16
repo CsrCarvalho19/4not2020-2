@@ -3,8 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
-#content{
+#content {
     margin: 40px;
 }
 
@@ -20,27 +19,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-align: center !important;
 }
 
-// Desaparece com os botões editar e excluir  das tabelas de listagens
+// Desaparece com os botões editar e excluir das tabelas de listagem
 .mat-row .mat-raised-button {
     visibility: hidden;
 }
 
-// Reexibe os botões na linha sob o cursos do mouse
+// Reexibe os botões na linha sob o cursor do mouse
 .mat-row:hover .mat-raised-button {
     visibility: visible;
 }
 
 // Coloca um leve destaque na linha sob o mouse
 .mat-row:hover {
-    filter:brightness(110%);
+    filter: brightness(110%);
 }
+
 .new-item {
     background-color: transparent;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    justify-content: right !important;
+    justify-content: flex-end;
 
-    a{
+    a {
         font-size: 110%;
     }
 }
@@ -57,4 +57,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       margin-right: 30px;
    }
    
+}
+
+.form-buttons {
+   background: transparent;
+
+   mat-toolbar-row {
+      display: flex;
+      justify-content: space-around;
+   }
 }
